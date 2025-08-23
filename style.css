@@ -1,0 +1,213 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 1em;
+    background: #121212;
+    color: #e0e0e0;
+}
+
+table {
+    background: #1e1e1e;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    color: #e0e0e0;
+}
+
+th {
+    background: #333;
+    padding: 0.6em;
+    border: 1px solid #444;
+    text-align: left;
+    vertical-align: top;
+}
+
+td {
+    border: 1px solid #444;
+    padding: 0.6em;
+    vertical-align: top;
+}
+
+header,
+footer {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1 {
+    margin-bottom: 0.2em;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 0.5em;
+}
+
+.filter-input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.checkmark {
+    text-align: center;
+    font-weight: bold;
+}
+
+.checkmark::before {
+    content: "✔";
+    color: green;
+}
+
+.link-list a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+
+select {
+    padding: 0.5em;
+    font-size: 1em;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+tr {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+tr.highlight {
+    background-color: #414141 !important;
+    transition: background-color 0.3s ease;
+}
+
+.symbol-cell {
+    text-align: center;
+    font-weight: bold;
+}
+
+.custom-select {
+    position: relative;
+    width: 250px;
+    font-size: 1em;
+    user-select: none;
+}
+
+.select-display {
+    padding: 0.5em;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.options-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 100;
+}
+
+.options-container.open {
+    display: block;
+}
+
+.options-container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4em;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #eee;
+    border-radius: 4px 4px 0 0;
+    font-size: 1em;
+}
+
+.option {
+    padding: 0.5em;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.option:hover,
+.option:focus {
+    background: #444;
+    color: white;
+    outline: none;
+}
+
+.option.highlight {
+    background: #555;
+    color: white;
+}
+
+.filter-input,
+#namespaceSelect .select-display,
+#filterMode {
+    height: 2.5em;
+    padding: 0.5em 0.6em;
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+#info-text {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1em;
+    border: none;
+    transition: max-height 0.4s ease, padding 0.4s ease, border-color 0.4s ease;
+}
+
+
+/* Scrollbar for webkit browsers */
+.options-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.options-container::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 4px;
+}
+
+.options-container::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+    border: 2px solid #1e1e1e;
+}
+
+.options-container::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+/* Scrollbar for firefox */
+.options-container {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1e1e1e;
+}

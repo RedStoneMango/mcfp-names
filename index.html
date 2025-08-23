@@ -1,0 +1,186 @@
+<!-- If you're reading this, thank StackOverflow. And ChatGPT. Maybe also me. -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft Freizeitpark – Namespace Liste</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Eine inoffizielle Liste aller Namespaces des Minecraft Freizeitparks von TheJoCraft und IOser100." />
+</head>
+<body>
+  <header>
+    <h1>Minecraft Freizeitpark – Namespace Liste</h1>
+    <div class="link-list">
+      <a href="https://www.youtube.com/@TheJoCraft" target="_blank" rel="noopener noreferrer">TheJoCraft auf YouTube</a> |
+      <a href="https://www.youtube.com/@IOser100" target="_blank" rel="noopener noreferrer">IOser100 auf YouTube</a>
+    </div>
+    <p class="disclaimer">Dies ist eine rein inoffizielle Fan-Seite ohne Verbindung zu TheJoCraft oder IOser100.</p>
+  </header>
+
+  <section id="infoToggleSection" style="margin-bottom: 1em; max-width: 800px; margin-left: auto; margin-right: auto; align-items: center; display: flex; flex-direction: column;">
+    <button id="infoToggleButton" aria-expanded="false" aria-controls="infoText" style="
+      background: #1e1e1e; 
+      color: #e0e0e0; 
+      border: 1px solid #444; 
+      border-radius: 4px; 
+      padding: 0.5em 1em; 
+      cursor: pointer;
+      font-size: 1em;
+      user-select: none;
+    ">
+      ❓ Hintergrundinformationen
+    </button>
+    <div id="infoText" role="region" aria-hidden="true" style="
+      margin-top: 0.5em; 
+      background: #1e1e1e; 
+      color: #ccc; 
+      border: none;
+      border-radius: 4px; 
+      padding: 0; 
+      max-height: 0;
+      overflow: hidden; 
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    ">
+      <h2>Was ist der Minecraft Freizeitpark?</h2>
+      <p>
+        Der Minecraft Freizeitpark ist ein kreatives Minecraft-Projekt, der YouTuber und Streamer <a href="https://www.youtube.com/@TheJoCraft" target="_blank" rel="noopener noreferrer">TheJoCraft</a> und <a href="https://www.youtube.com/@IOser100" target="_blank" rel="noopener noreferrer">IOser100</a>. Nachdem die Beiden bereits den faszinierenden "Rotstein-Park" gebaut hatten, begannen Josef Heinrich Bogatzki und Janus Vorrath 2023 mit dem Langezeit-Projekt des Minecraft Freizeitparks, der eine Vielzahl von Attraktionen, Fahrgeschäften und interaktiven Erlebnissen bietet.
+      </p>
+      <p>
+        Lange schon bieten die beiden Content Creators wöchentlich Streams auf YouTube und Twitch an, in denen sie die Grenzen des Möglichen in Minecraft sprengen. Hierfür verwendet das Team ausschließlich <abbr title="Nicht-Modifiziertes Minecraft. Somit werden keine Mods, PlugIns, o.ä. verwendet und der Park ist vollends mit jeder handelsüblichen, nicht erweiterten Version des Spiels kompatibel.">"Vanilla"</abbr> Funktionen Minecrafts und realisiert alle Vorhaben durch die pure Nutzung von Command-Blöcken und Daten-, sowie Ressourcenpaketen.
+      </p>
+      <p>
+        Während sich IOser100 auf die Optik des Parks konzentriert, ist TheJoCraft für die technische Umsetzung verantwortlich. Dabei kommen viele innovative Mechaniken zum Einsatz, die das Spielerlebnis im Park einzigartig machen.
+      </p>
+      <h2>Was sind Namespaces?</h2>
+      <p>
+        Um zu gewährleisten, dass der Park auch in Zukunft erweiterbar bleibt und keine internen Kompatibilitäts-Probleme auftreten, entwickelte TheJoCraft früh ein <strong>Namespace</strong>-System.
+      </p>
+      <p>
+        Solche Namespaces sind eine Art Präfix, das sich für jede Attraktion oder Funktionalität des Parks unterscheidet. Somit wird verhindet, dass sich Variablennamen oder ähnliches versehentlich in die Quere kommen. <i>(Etwa lässt sich so zwischen <code>jumpAndRun.punkte</code> und <code>templeRun.punkte</code> unterscheiden. (Dies ist nur ein Beispiel, die soeben genannten Variablen existieren Stand August 2025 <strong>nicht</strong> im Park))</i>
+      </p>
+      <p>
+        Leider existiert kein zentrales Verzeichnis der Creators, in dem alle Namespaces aufgelistet sind. Daher haben wir als Gruppe von Fans des Projektes beschlossen, in langwieriger Recherchearbeit eine solche zu erstellen und zu veröffentlichen. Diese soll es ermöglichen, schnell und einfach die verschiedenen Namespaces zu finden, deren Nutzung zu verstehen und zu prüfen, ob eine Namespace bereits existiert.
+      </p>
+      <p>
+        Unser Ziel ist es, diese Liste so regelmäßig wie möglich zu erweitern, um alle Namespaces des Parks zu dokumentieren. Wir versuchen, die Liste maximal 3 Tage nach einem Freizeitpark-Stream zu aktualisieren, sollten sich die verwendeten Namespaces geändert haben.
+      </p>
+      <h2>Wie kann ich mich beteiligen?</h2>
+      <p>
+        Genauso wie der Minecraft Freizeitpark ein transparentes Projekt ist, ist es uns wichtig, dieses Projekt quelloffen und für alle zugänglich zu machen. Daher haben wir den Quellcode dieser Seite <a href="https://github.com/RedStoneMango/mcfp-names" target="_blank" rel="noopener noreferrer">auf GitHub veröffentlicht</a>. Fühl dich frei, Pull-Requests zu erstellen, Fehler zu melden oder dieses Projekt anderweitig zu unterstützen.
+      </p>
+      <p>
+        Solltest du eine Namespace entdecken, die noch nicht in dieser Liste enthalten ist, inkorrekt dokumentiert wurde oder anderweitig einen Fehler finden, zöger nicht, einen Issue auf GitHub zu erstellen, sodass wir diese Liste stetig verbessern können.
+      </p>
+    </div>
+  </section>
+
+  <!-- Namespace Vorschlags-Button -->
+  <div style="margin-top: 1em; display: flex; justify-content: center; width: 100%; margin-bottom: 1em;">
+    <button id="namespaceSuggestButton" style="
+      background: #1e1e1e; 
+      color: #e0e0e0; 
+      border: 1px solid #444; 
+      border-radius: 4px; 
+      padding: 0.5em 1.4em; 
+      cursor: pointer;
+      font-size: 1em;
+      user-select: none;
+    ">
+      💡 Namespace-Vorschläge
+    </button>
+  </div>
+  
+  <!-- Modal Overlay -->
+  <div id="suggestModal" style="
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+  ">
+    <div style="
+      background: #1e1e1e;
+      color: #e0e0e0;
+      padding: 2em;
+      border-radius: 8px;
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+    ">
+      <button id="closeSuggestModal" style="
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+        background: transparent;
+        color: #ccc;
+        border: none;
+        font-size: 1.2em;
+        cursor: pointer;
+      ">✖</button>
+  
+      <h2>Namespace-Vorschläge</h2>
+      <p><strong>Dieses Tool erstellt Ihnen Vorschläge für ungenutzte Namespaces</strong></p>
+      <p>Geben Sie den Titel eines Projekts ein (z. B. <code>Warden Escape</code>)</p>
+      <p>Einzelne Wörter sollten mit Leerzeichen getrennt werden. Dies gilt auch für zusammengesetzte Substantive</p>
+      <input type="text" id="namespaceInput" style="
+        width: 100%;
+        padding: 0.6em;
+        margin-bottom: 1em;
+        background: #1e1e1e;
+        color: #e0e0e0;
+        border: 1px solid #444;
+        border-radius: 4px;
+        font-size: 1em;
+      " placeholder="z. B. Warden Escape" />
+      <div id="suggestionResults"></div>
+    </div>
+  </div>
+
+  <div
+    style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-bottom: 1em;"
+  >
+    <input class="filter-input" type="text" id="optionsFilterInput" placeholder="Textsuche nach Tag, Nutzung oder Anmerkung"/>
+
+    <div class="custom-select" tabindex="0" id="namespaceSelect" aria-haspopup="listbox" aria-expanded="false" aria-label="Namespace Auswahl">
+      <div class="select-display" role="button" aria-haspopup="listbox" aria-expanded="false" tabindex="0"
+      >🔽 Springe zu Namespace</div>
+      <div class="options-container" role="listbox" aria-label="Namespace Optionen">
+        <input type="text" placeholder="Filter..." aria-label="Namespace Optionen filtern" />
+        <div class="options-list"></div>
+      </div>
+    </div>
+
+    <select id="filterMode" aria-label="Filtermodus auswählen">
+      <option value="all">✅ Zeige alle</option>
+      <option value="tagroot">🏷️ Nur Tag-Roots</option>
+      <option value="scoreroot">📊 Nur Score-Roots</option>
+    </select>
+  </div>
+
+  <table id="namespaceTable" role="table" aria-label="Namespace Tabelle">
+    <thead>
+      <tr>
+        <th scope="col">Namespace</th>
+        <th scope="col">Nutzung</th>
+        <th scope="col">Anmerkung</th>
+        <th scope="col">Tag-Root</th>
+        <th scope="col">Score-Root</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Daten werden durch JavaScript eingefügt -->
+    </tbody>
+  </table>
+
+  <footer>
+    <p>Dies ist ein Fan-Projekt ohne kommerzielle Absicht. Es besteht keine Verbindung zu TheJoCraft und / oder IOser100.</p>
+    <p>Besuche dieses Projekt auf <a href="https://github.com/RedStoneMango/mcfp-names" target="_blank" rel="noopener noreferrer">GitHub</a> und beteilige dich!</p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
