@@ -19,6 +19,49 @@
     <p class="disclaimer">Dies ist eine rein inoffizielle Fan-Seite ohne Verbindung zu TheJoCraft oder IOser100.</p>
   </header>
 
+  <!-- Sprach-Hinweis Overlay -->
+<div id="languageModal" style="
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+">
+  <div style="
+    background: #1e1e1e;
+    color: #e0e0e0;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+  ">
+    <button id="closeLanguageModal" style="
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
+      background: transparent;
+      color: #ccc;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+    ">✖</button>
+
+    <h2>Language Information</h2>
+    <p>This is a fan-page about a <strong>German</strong> streaming project.</p>
+    <p>All of the texts on this website are written in <strong>German</strong>. There are no native translations because this project is intended for <strong>German</strong> speakers only.</p>
+    <p>If you are looking for an Englisch version, try the <a href="https://redstonemango-github-io.translate.goog/mcfp-names?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=de">automatic Google translator</a>.</p>
+
+    <label style="display: block; margin-top: 1em; font-size: 0.95em;">
+      <input type="checkbox" id="dontShowAgainCheckbox" style="margin-right: 0.5em;" />
+      Do not show this information again.
+    </label>
+  </div>
+</div>
+
   <section id="infoToggleSection" style="margin-bottom: 1em; max-width: 800px; margin-left: auto; margin-right: auto; align-items: center; display: flex; flex-direction: column;">
     <button id="infoToggleButton" aria-expanded="false" aria-controls="infoText" style="
       background: #1e1e1e; 
@@ -179,6 +222,7 @@
   <footer>
     <p>Dies ist ein Fan-Projekt ohne kommerzielle Absicht. Es besteht keine Verbindung zu TheJoCraft und / oder IOser100.</p>
     <p>Besuche dieses Projekt auf <a href="https://github.com/RedStoneMango/mcfp-names" target="_blank" rel="noopener noreferrer">GitHub</a> und beteilige dich!</p>
+    <p id="resetLanguageNotice" style="display: none; cursor: pointer; text-decoration: underline;">You are currently suppressing the language information. Undo here.</p>
   </footer>
 
   <script type="module" src="main.js"></script>
