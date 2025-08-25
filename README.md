@@ -1,5 +1,7 @@
 # 🎢 Minecraft Freizeitpark – Namespace Liste
 
+> This is a German project. If you are looking for an englisch README, see [here](./README_en.md)
+
 Eine inoffizielle Liste aller Namespaces des Minecraft Freizeitparks von TheJoCraft und IOser100.
 
 Ziel dieser Fan-Seite ist es, eine zentrale Übersicht aller bekannten Namespaces bereitzustellen – zur besseren Recherche, Planung von Funktionen und zur Vermeidung von Überschneidungen im Park-System.
@@ -12,11 +14,11 @@ Ziel dieser Fan-Seite ist es, eine zentrale Übersicht aller bekannten Namespace
 
 Dieses Projekt ist eine **rein inoffizielle Fan-Seite**, die es sich zur Aufgabe gemacht hat, alle bekannten **Namespaces** des beliebten **Minecraft Freizeitparks** (gebaut von [TheJoCraft](https://www.youtube.com/@TheJoCraft) & [IOser100](https://www.youtube.com/@IOser100)) zu dokumentieren.
 
-Der Minecraft Freizeitpark nutzt ein **eigenes Namespace-System**, um Variablen- und Funktionskonflikte zu vermeiden. Diese Seite hilft:
+Der Minecraft Freizeitpark nutzt ein **eigenes Namespace-System**, um Variablen- und Funktionskonflikte zu vermeiden. Diese Seite hilft bei:
 
-- bei der **Recherche bereits genutzter Namespaces**
-- beim **Verstehen der Verwendungsweise**
-- beim **Vorschlagen ungenutzter Namespaces**
+- der **Recherche bereits genutzter Namespaces**
+- dem **Verstehen der Verwendungsweise**
+- dem **Vorschlagen ungenutzter Namespaces**
 
 ---
 
@@ -76,7 +78,7 @@ Wir freuen uns über jeden Beitrag zur Verbesserung der Seite!
 
 ### 🔧 Möglichkeiten:
 
-- Neue Namespaces vorschlagen
+- Auf nicht dokumentierte Namespaces hinweisen
 - Fehlerhafte Angaben korrigieren
 - Features verbessern oder hinzufügen
 
@@ -93,7 +95,7 @@ Alternativ kannst du auch einen [Issue](https://github.com/RedStoneMango/mcfp-na
 
 ## 🔒 Lizenz
 
-[MIT License](LICENSE.txt)
+Dieses Projekt steht unter der [MIT Lizenz](LICENSE.txt)
 
 ---
 
