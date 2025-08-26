@@ -1,6 +1,6 @@
 # 🎢 Minecraft Theme Park – Namespace List
 
-> Dies ist die englische Übersetzung der Repojekt-README. Das deutsche Original finden Sie [hier](./README.md)
+> Dies ist die englische Übersetzung der Repojekt-README. Das deutsche Original finden Sie [hier](./README.md).
 
 An unofficial list of all namespaces used in the Minecraft Theme Park by the German content creators TheJoCraft and IOser100.
 
