@@ -482,6 +482,4 @@ filterMode.addEventListener("change", () => {
 
 // Initiales Rendern
 renderTable();
-
-// Wenn Namespace im Dropdown gewählt wird, springe zu Zeile im Tisch
-// (wird in renderOptions() per Klick behandelt)
+tableBody.parentElement.style.display = "";
