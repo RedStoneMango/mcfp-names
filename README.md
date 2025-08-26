@@ -1,6 +1,6 @@
 # 🎢 Minecraft Freizeitpark – Namespace Liste
 
-> This is a German project. If you are looking for an englisch README, see [here](./README_en.md)
+> This is a German project. If you are looking for an englisch README, see [here](./README_en.md).
 
 Eine inoffizielle Liste aller Namespaces des Minecraft Freizeitparks von TheJoCraft und IOser100.
 
