@@ -126,13 +126,6 @@ export const namespaces = [
         "scoreroot": true
     },
     {
-        "tag": "boatbridge",
-        "nutzung": "Das <i>\"Boatbridge über Lava\"</i>-Spiel",
-        "anmerkung": "Jo meine mehrfach, er sei mit diesem Spiel unzufrieden und plane, es mit den HappyGhasts neu zu bauen.<p>Dieses Spiel benötigt technisch gesehen zwar ein Scoreboard, allerdings lässt sich nicht mehr nachvollziehen, welchen Namen dieses hat, weshalb in dieser Liste davon ausgegangen wird, dass Jo die Werte im <code>data</code>-Score speichert",
-        "tagroot": true,
-        "scoreroot": false
-    },
-    {
         "tag": "uf",
         "nutzung": "Das Spiel <i>\"Unendlicher Fall\"</i>",
         "anmerkung": "--",
