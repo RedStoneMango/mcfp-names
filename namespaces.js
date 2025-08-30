@@ -183,8 +183,8 @@ export const namespaces = [
     },
     {
         "tag": "clearblocks",
-        "nutzung": "Das Spiel <i>Clear The Blocks</i> im Tunnel der vom Eingangplateau wegführt",
-        "anmerkung": "--",
+        "nutzung": "Das Spiel <i>Clear The Blocks</i>",
+        "anmerkung": "Dieses Spiel befindet sich im Tunnel, der vom Eingangsplateau wegführt",
         "tagroot": true,
         "scoreroot": true
     }
