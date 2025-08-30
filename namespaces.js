@@ -142,8 +142,8 @@ export const namespaces = [
     {
         "tag": "hdu",
         "nutzung": "Die <i>\"Höhle der Umkehr\"</i>",
-        "anmerkung": "--",
-        "tagroot": true,
+        "anmerkung": "Die Technik dieses Projektes wurde zwar abgerissen, allerdings existiert nach wie vor der \"hdu\"-Score",
+        "tagroot": false,
         "scoreroot": true
     },
     {
