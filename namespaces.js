@@ -180,5 +180,12 @@ export const namespaces = [
         "anmerkung": "--",
         "tagroot": true,
         "scoreroot": true
+    },
+    {
+        "tag": "clearblocks",
+        "nutzung": "Das Spiel <i>Clear The Blocks</i> im Tunnel der vom Eingangplateau wegführt",
+        "anmerkung": "--",
+        "tagroot": true,
+        "scoreroot": true
     }
 ];
