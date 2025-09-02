@@ -187,5 +187,12 @@ export const namespaces = [
         "anmerkung": "Dieses Spiel befindet sich im Tunnel, der vom Eingangsplateau wegführt",
         "tagroot": true,
         "scoreroot": true
+    },
+    {
+        "tag": "katzmaus",
+        "nutzung": "Das <i>Katze-fängt-Maus-Spiel</i>",
+        "anmerkung": "Das Spiel hat auch ein Team mit dieser Namespace. In Zukunft wird die Tabelle ausgeweitet werden, um dies korrekt darzustellen",
+        "tagroot": true,
+        "scoreroot": true
     }
 ];
