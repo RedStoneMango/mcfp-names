@@ -14,13 +14,6 @@ export const namespaces = [
         "scoreroot": true
     },
     {
-        "tag": "train",
-        "nutzung": "Teile der <i>Parkbahn v1</i>",
-        "anmerkung": "Diese Version Bahn ist zwar nicht mehr aktuell, der Score müsste technisch gesehen aber immernoch existieren. Die <i>Parkbahn v2</i> nutzt ausschließlich die Namespace <code>Parkbahn</code>, sodass diese Namespace eigentlich nicht mehr aktiv verwendet wird.",
-        "tagroot": false,
-        "scoreroot": true
-    },
-    {
         "tag": "1s_clock",
         "nutzung": "Die immeraktive <i>1-Sekunden-Clock</i> des Parks",
         "anmerkung": "Es existieren ebenfalls Clocks für 2,5,10 Sekunden, sowie die Art der <i>\"Detect-Clocks\"</i>",
