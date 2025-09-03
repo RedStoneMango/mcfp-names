@@ -423,51 +423,56 @@ document.addEventListener("click", (e) => {
 function renderTable(searchText = "", mode = "all") {
     tableBody.innerHTML = "";
 
-    const filteredData = namespaces.filter(({ tag, nutzung, anmerkung, tagroot, scoreroot }) => {
-    // Filtermodus
-    if (mode === "tagroot" && !tagroot) return false;
-    if (mode === "scoreroot" && !scoreroot) return false;
-
-    // Suchfilter
-    const search = searchText.toLowerCase();
-    if (
-        !tag.toLowerCase().includes(search) &&
-        !nutzung.toLowerCase().includes(search) &&
-        !anmerkung.toLowerCase().includes(search)
-    ) {
-        return false;
-    }
-    return true;
+    const filteredData = namespaces.filter(({ tag, nutzung, anmerkung, tagroot, scoreroot, teamroot }) => {
+        // Filtermodus
+        if (mode === "tagroot" && !tagroot) return false;
+        if (mode === "scoreroot" && !scoreroot) return false;
+        if (mode === "teamroot" && !teamroot) return false;
+    
+        // Suchfilter
+        const search = searchText.toLowerCase();
+        if (
+            !tag.toLowerCase().includes(search) &&
+            !nutzung.toLowerCase().includes(search) &&
+            !anmerkung.toLowerCase().includes(search)
+        ) {
+            return false;
+        }
+        return true;
     });
 
-    filteredData.forEach(({ tag, nutzung, anmerkung, tagroot, scoreroot }) => {
-    const tr = document.createElement("tr");
-    tr.setAttribute("namespaces-tag", tag);
-
-    const tdTag = document.createElement("td");
-    tdTag.innerHTML = tag;
-    tdTag.setAttribute("namespaces-label", "Tag");
-    tdTag.scope = "row";
-
-    const tdNutzung = document.createElement("td");
-    tdNutzung.innerHTML = nutzung;
-    tdNutzung.setAttribute("namespaces-label", "Nutzung");
-
-    const tdAnmerkung = document.createElement("td");
-    tdAnmerkung.innerHTML = anmerkung;
-    tdAnmerkung.setAttribute("namespaces-label", "Anmerkung");
-
-    const tdTagroot = document.createElement("td");
-    tdTagroot.classList.add("symbol-cell");
-    tdTagroot.textContent = tagroot ? "✅" : "❌";
-
-    const tdScoreroot = document.createElement("td");
-    tdScoreroot.classList.add("symbol-cell");
-    tdScoreroot.textContent = scoreroot ? "✅" : "❌";
-
-    tr.append(tdTag, tdNutzung, tdAnmerkung, tdTagroot, tdScoreroot);
-
-    tableBody.appendChild(tr);
+    filteredData.forEach(({ tag, nutzung, anmerkung, tagroot, scoreroot, teamroot }) => {
+        const tr = document.createElement("tr");
+        tr.setAttribute("namespaces-tag", tag);
+    
+        const tdTag = document.createElement("td");
+        tdTag.innerHTML = tag;
+        tdTag.setAttribute("namespaces-label", "Tag");
+        tdTag.scope = "row";
+    
+        const tdNutzung = document.createElement("td");
+        tdNutzung.innerHTML = nutzung;
+        tdNutzung.setAttribute("namespaces-label", "Nutzung");
+    
+        const tdAnmerkung = document.createElement("td");
+        tdAnmerkung.innerHTML = anmerkung;
+        tdAnmerkung.setAttribute("namespaces-label", "Anmerkung");
+    
+        const tdTagroot = document.createElement("td");
+        tdTagroot.classList.add("symbol-cell");
+        tdTagroot.textContent = tagroot ? "✅" : "❌";
+    
+        const tdScoreroot = document.createElement("td");
+        tdScoreroot.classList.add("symbol-cell");
+        tdScoreroot.textContent = scoreroot ? "✅" : "❌";
+    
+        const tdTeamroot = document.createElement("td");
+        tdTeamroot.classList.add("symbol-cell");
+        tdTeamroot.textContent = teamroot ? "✅" : "❌";
+    
+        tr.append(tdTag, tdNutzung, tdAnmerkung, tdTagroot, tdScoreroot, tdTeamroot);
+    
+        tableBody.appendChild(tr);
     });
 }
 
