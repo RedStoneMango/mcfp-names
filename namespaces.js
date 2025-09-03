@@ -82,7 +82,7 @@ export const namespaces = [
     {
         "tag": "temp",
         "nutzung": "Temporäres Speichern von Daten sowie der <i>Freizeitparkeingang</i>",
-        "anmerkung": "Für den Eingang des Freizetiparks kann man die Daten in die Unterkategorien <i>temp.intro</i> und <i>temp.ticketcheck</i> unterteilen. Beide werden nur für Scores verwendet",
+        "anmerkung": "Für den Eingang des Freizeitparks kann man die Daten in die Unterkategorien <i>temp.intro</i> und <i>temp.ticketcheck</i> unterteilen. Beide werden nur für Scores verwendet",
         "tagroot": false,
         "scoreroot": true,
         "teamroot": false
