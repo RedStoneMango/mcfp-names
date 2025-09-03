@@ -57,8 +57,10 @@ https://redstonemango.github.io/mcfp-names/
 ├── main.js             # Funktionalität (Tabellen, Filter, Modals etc.)
 ├── namespaces.js       # Definitionen der Namespaces
 ├── README.md           # Dieses Dokument
+├── README_en.md        # Englische Version dieses Dokuments
 ├── LICENSE.txt         # MIT-Lizenz-Text dieses Projekts
-└── about-mcfp.md       # Seperate Projektbeschreibung des Minecraft Freizeitparks
+├── about-mcfp.md       # Seperate Projektbeschreibung des Minecraft Freizeitparks
+└── about-mcfp_en.md    # Englische seperate Projektbeschreibung des Minecraft Freizeitparks
 ```
 
 ---

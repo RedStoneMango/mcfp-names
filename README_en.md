@@ -56,9 +56,11 @@ https://redstonemango.github.io/mcfp-names/
 ├── style.css           # Design/Layout
 ├── main.js             # Functionality (tables, filters, modals, etc.)
 ├── namespaces.js       # Namespace definitions
-├── README.md           # This document
+├── README.md           # This document's German version
+├── README_en.md        # This document
 ├── LICENSE.txt         # MIT license text
-└── about-mcfp.md       # Separate project description of the Minecraft Theme Park
+└── about-mcfp.md       # German separate project description of the Minecraft Theme Park
+└── about-mcfp_en.md    # Separate project description of the Minecraft Theme Park
 ```
 
 ---
