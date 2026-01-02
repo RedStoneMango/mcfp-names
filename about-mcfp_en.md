@@ -1,4 +1,4 @@
-# 🎢 About the Minecraft Theme Park
+# About the Minecraft Theme Park
 
 The **Minecraft Theme Park** is a creative Minecraft project by the German YouTubers and streamers [TheJoCraft](https://www.youtube.com/@TheJoCraft) and [IOser100](https://www.youtube.com/@IOser100). After already building the fascinating “Rotstein Park,” **Josef Heinrich Bogatzki** and **Janus Vorrath** launched the long-term project Minecraft Theme Park in 2023 – featuring a wide variety of attractions, rides, and interactive experiences.
 

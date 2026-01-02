@@ -1,4 +1,4 @@
-# 🎢 Über den Minecraft Freizeitpark
+# Über den Minecraft Freizeitpark
 
 Der **Minecraft Freizeitpark** ist ein kreatives Minecraft-Projekt der YouTuber und Streamer [TheJoCraft](https://www.youtube.com/@TheJoCraft) und [IOser100](https://www.youtube.com/@IOser100). Nachdem die beiden bereits den faszinierenden „Rotstein-Park“ gebaut hatten, starteten **Josef Heinrich Bogatzki** und **Janus Vorrath** im Jahr 2023 das Langzeit-Projekt Minecraft Freizeitpark – mit einer Vielzahl an Attraktionen, Fahrgeschäften und interaktiven Erlebnissen.
 
