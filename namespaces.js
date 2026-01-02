@@ -106,7 +106,7 @@ export const namespaces = [
     {
         "tag": "tale",
         "nutzung": "Die <i>optische Feen-Logik</i> für das Biom der \"Märchenschmiede\"",
-        "anmerkung": "Wir meinen uns zu erinnern, dass Jo mal meinte, er wolle diese Technik umschreiben / komplett entfernen, konnten im Nachhinein jedoch keine Beweise für dieses Gespräch finden.",
+        "anmerkung": "Wir meinen uns zu erinnern, dass Jo mal meinte, er wolle diese Technik umschreiben / komplett entfernen, konnten im Nachhinein jedoch keine Beweise für dieses Gespräch finden. Des Weiteren sind wir uns auch nicht sicher, ob diese Logik immer noch existiert (Hilfe Willkommen)",
         "tagroot": true,
         "scoreroot": false,
         "teamroot": false
