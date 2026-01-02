@@ -1,4 +1,4 @@
-export const namespaces = [
+[
     {
         "tag": "data",
         "nutzung": "Genereller Data-Holder des Parks",
@@ -223,4 +223,4 @@ export const namespaces = [
         "scoreroot": true,
         "teamroot": true
     }
-];
+]
