@@ -1,7 +1,6 @@
 import {namespaces} from './namespaces.js';
 
 const tableBody = document.querySelector("#namespaceTable tbody");
-const namespaceSelect = document.getElementById("namespaceSelect");
 const tableFilterInput = document.getElementById("optionsFilterInput"); // das Feld über der Tabelle
 const filterMode = document.getElementById("filterMode");
 
@@ -21,26 +20,8 @@ const closeSuggestModal = document.getElementById("closeSuggestModal");
 const namespaceInput = document.getElementById("namespaceInput");
 const suggestionResults = document.getElementById("suggestionResults");
 
-const languageModal = document.getElementById("languageModal");
-const closeLanguageModal = document.getElementById("closeLanguageModal");
-const languageDontShowAgain = document.getElementById('dontShowAgainCheckbox');
-const languageInfoShowAgain = document.getElementById('resetLanguageNotice');
-
-
-const userLang = navigator.language || navigator.userLanguage;
-
 let highlightedIndex = -2;
 let filteredOptions = [];
-
-
-// Zeige Sprach-Hinweis-Elemente
-if (!userLang.toLowerCase().startsWith('de') && localStorage.getItem('hideLanguageNotice') !== 'true') {
-    languageModal.style.display = 'flex';
-}
-if (localStorage.getItem('hideLanguageNotice') === 'true') {
-  languageInfoShowAgain.style.display = 'inline';
-}
-
 
 // Modal öffnen
 namespaceSuggestButton.addEventListener("click", () => {
@@ -55,30 +36,6 @@ closeSuggestModal.addEventListener("click", () => {
     suggestModal.style.display = "none";
     document.body.style.overflow = "";
 });
-closeLanguageModal.addEventListener('click', () => {
-    languageModal.style.display = 'none';
-    document.body.style.overflow = '';
-    if (languageDontShowAgain.checked) {
-        localStorage.setItem('hideLanguageNotice', 'true');
-        languageInfoShowAgain.style.display = 'inline';
-    }
-});
-
-// Schließen durch Klick außerhalb des Modals
-window.addEventListener("click", (e) => {
-    if (suggestModal.style.display === "flex" && e.target === suggestModal) {
-      suggestModal.style.display = "none";
-      document.body.style.overflow = "";
-    }
-    if (languageModal.style.display === "flex" && e.target === languageModal) {
-      languageModal.style.display = "none";
-      document.body.style.overflow = "";
-      if (languageDontShowAgain.checked) {
-          localStorage.setItem('hideLanguageNotice', 'true');
-          languageInfoShowAgain.style.display = 'inline';
-      }
-    }
-});
 
 // Schließen durch Escape-Taste
 window.addEventListener("keydown", (e) => {
@@ -86,21 +43,6 @@ window.addEventListener("keydown", (e) => {
       suggestModal.style.display = "none";
       document.body.style.overflow = "";
     }
-    if (e.key === "Escape" && languageModal.style.display === "flex") {
-      languageModal.style.display = "none";
-      document.body.style.overflow = "";
-      if (languageDontShowAgain.checked) {
-        localStorage.setItem('hideLanguageNotice', 'true');
-        languageInfoShowAgain.style.display = 'inline';
-      }
-    }
-});
-
-// "Hinweis nicht mehr anzeigen" Link im Footer
-languageInfoShowAgain.addEventListener('click', () => {
-    localStorage.removeItem('hideLanguageNotice');
-    alert('The information on this website\'s language will be shown again.');
-    languageInfoShowAgain.style.display = 'none';
 });
 
 
