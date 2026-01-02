@@ -6,6 +6,9 @@ body {
     color: #e0e0e0;
 }
 
+#namespaceTableContainer {
+    overflow-x: auto;
+}
 table {
     background: #1e1e1e;
     width: 80%;
