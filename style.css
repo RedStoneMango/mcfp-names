@@ -189,7 +189,6 @@ tr.highlight {
 }
 
 
-/* Scrollbar for webkit browsers */
 .options-container::-webkit-scrollbar {
     width: 8px;
 }
@@ -209,7 +208,6 @@ tr.highlight {
     background-color: #777;
 }
 
-/* Scrollbar for firefox */
 .options-container {
     scrollbar-width: thin;
     scrollbar-color: #555 #1e1e1e;
