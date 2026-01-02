@@ -1,5 +1,3 @@
-import {namespaces} from './namespaces.js';
-
 const tableBody = document.querySelector("#namespaceTable tbody");
 const tableFilterInput = document.getElementById("optionsFilterInput"); // das Feld über der Tabelle
 const filterMode = document.getElementById("filterMode");
@@ -13,6 +11,7 @@ const optionsList = optionsContainer.querySelector(".options-list");
 const infoToggleButton = document.getElementById("infoToggleButton");
 const infoText = document.getElementById("infoText");
 
+const namespaces = await fetch('./namespaces.json').then(r => r.json());
 const existingNamespaces = namespaces.map(entry => entry.tag.toLowerCase());
 const suggestModal = document.getElementById("suggestModal");
 const namespaceSuggestButton = document.getElementById("namespaceSuggestButton");
