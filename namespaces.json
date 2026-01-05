@@ -82,7 +82,7 @@
     {
         "tag": "temp",
         "nutzung": "Temporäres Speichern von Daten sowie der <i>Freizeitparkeingang</i>",
-        "anmerkung": "Für den Eingang des Freizeitparks kann man die Daten in die Unterkategorien <i>temp.intro</i> und <i>temp.ticketcheck</i> unterteilen. Beide werden nur für Scores verwendet",
+        "anmerkung": "Der <i>temp</i> Score wird von einer Vielzahl von Techniken verwendet, die ein Scoreboard zum Ausführen von Rechnungen benötigen und diese in nur einem Tick ausführen können. Des Weiteren findet er Nutzen beim Eingang des Freizeitparks, wi zum Einen <i>temp.intro</i> und <i>temp.ticketcheck</i> als Scores gefunden werden können",
         "tagroot": false,
         "scoreroot": true,
         "teamroot": false
@@ -90,10 +90,10 @@
     {
         "tag": "test",
         "nutzung": "Temporäre Logiken zum Testen von Dingen",
-        "anmerkung": "Diese Namespace existiert nur temporär. Am Ende einer Testphase löscht Jo für gewöhnlich alle Referenzen zu dieser Namespace",
+        "anmerkung": "Diese Namespace existiert nur temporär. Am Ende einer Testphase löscht Jo für gewöhnlich alle Referenzen zu dieser Namespace.<br><b>Da diese Namespace regelmäßig für eine Vielzahl von Zwecken genutzt wird, lässt sich nicht sagen, ob sie Anwendung als alle 3 Roots findet. Sicherheitshalber wird in dieser Liste jedoch davon ausgegangen</b>",
         "tagroot": true,
         "scoreroot": true,
-        "teamroot": false
+        "teamroot": true
     },
     {
         "tag": "logflume",
