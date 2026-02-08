@@ -82,7 +82,7 @@
     {
         "tag": "temp",
         "nutzung": "Temporäres Speichern von Daten sowie der <i>Freizeitparkeingang</i>",
-        "anmerkung": "Der <i>temp</i> Score wird von einer Vielzahl von Techniken verwendet, die ein Scoreboard zum Ausführen von Rechnungen benötigen und diese in nur einem Tick ausführen können. Des Weiteren findet er Nutzen beim Eingang des Freizeitparks, wi zum Einen <i>temp.intro</i> und <i>temp.ticketcheck</i> als Scores gefunden werden können",
+        "anmerkung": "Der <i>temp</i> Score wird von einer Vielzahl von Techniken verwendet, die ein Scoreboard zum Ausführen von Rechnungen benötigen und diese in nur einem Tick ausführen können.<br>Des Weiteren wird er am Eingang des Freizeitparks (als <i>temp.intro</i> und <i>temp.ticketcheck</i>) genutzt",
         "tagroot": false,
         "scoreroot": true,
         "teamroot": false
